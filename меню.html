@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дигорон Мадзаска — меню ресторана</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(249, 236, 218);
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color: rgb(252, 245, 230);
+    color: rgb(49, 49, 49);
+    padding: 20px 0;
+}
+
+.header-inner{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.logo{
+    color: rgb(64, 43, 9);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+
+nav a, .cart{
+    color: rgb(19, 13, 4);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.intro{
+    padding: 40px 0;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.sidebar{
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    text-align: center;
+
+}
+
+.sidebar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(62, 62, 62);
+}
+
+.sidebar a:hover{
+    text-decoration: underline;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    min-width: 350px;
+}
+
+.product-buy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card p {
+    color: rgb(85, 85, 85);
+}
+
+button{
+    border-radius: 8px;
+    background-color: rgb(134, 99, 41);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 8px 10px;
+}
+
+button:hover{
+    background-color: rgb(74, 54, 22);
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 150px;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="" class="logo">Дигорон Мадзаска🍽️</a>
+            <nav>
+                <a href="">Главная</a>
+                <a href="">Меню</a>
+                <a href="">Контакты</a>
+            </nav>
+            <a href="" class="cart">🛒</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+           <h1>Ресторан осетинской кухни</h1>
+           <p>Традиционные блюда, приготовленные с душой.</p> 
+        </section>
+
+        <section class="catalog">
+            <aside class="sidebar">
+                <h2>Категории</h2>
+                <a href="">Горячее</a>
+                <a href="">Пироги</a>
+                <a href="">Салаты</a>
+                <a href="">Напитки</a>
+                <a href="">Десерты</a>
+            </aside>
+
+            <div class="products">
+                <article class="product-card">
+                        <h3>Осетинский пирог с мясом</h3>
+                        <p>Тонкое тесто, сочная начинка из говядины и бульона</p>
+                        <div class="product-buy">
+                            <strong>450 Р</strong>
+                            <button>Заказать</button>
+                        </div>
+                </article>
+
+                <article class="product-card">
+                        <h3>Дзыкка</h3>
+                        <p>Традиционное осетинское блюдо из свежего сыра и сметаны</p>
+                        <div class="product-buy">
+                            <strong>320 Р</strong>
+                            <button>Заказать</button>
+                        </div>
+                </article>
+
+                <article class="product-card">
+                        <h3>Шашлык из баранины</h3>
+                        <p>Маринованная баранина на углях, подаётся с луком и зеленью</p>
+                        <div class="product-buy">
+                            <strong>590 Р</strong>
+                            <button>Заказать</button>
+                        </div>
+                </article>
+
+                <article class="product-card">
+                        <h3>Осетинский пирог с картофелем и сыром</h3>
+                        <p>Классический картофджин — нежное тесто и тянущийся сыр</p>
+                        <div class="product-buy">
+                            <strong>380 Р</strong>
+                            <button>Заказать</button>
+                        </div>
+                </article>
+
+                <article class="product-card">
+                        <h3>Арака (осетинская водка)</h3>
+                        <p>Традиционный крепкий напиток домашней перегонки, 50 мл</p>
+                        <div class="product-buy">
+                            <strong>150 Р</strong>
+                            <button>Заказать</button>
+                        </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Дигорон Мадзаска. Все права защищены</p>
+    </footer>
+    
+</body>
+</html>
